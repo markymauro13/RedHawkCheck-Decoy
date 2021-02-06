@@ -5,9 +5,6 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
-        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
-        crossorigin="anonymous"></script>
     <link rel="icon"
         href="https://s3-us-west-2.amazonaws.com/scorestream-team-profile-pictures/274628/20190413070441_390_mascot300.png">
     <!-- Bootstrap CSS -->
@@ -18,9 +15,10 @@
 </head>
 
 <body>
-    <div class="top text-center pt-5">
+    <div class="top text-center pt-4">
         <img src="https://www.montclair.edu/university-communications/wp-content/uploads/sites/144/2019/11/MSU_Crest_FullColor_RGB.jpg"
-            alt="" style="width: 300px; height: 55px;" onclick="getQuestion();">
+            alt="" style="width: 300px; height: 55px;">
+        <!--onclick="getQuestion();"-->
     </div>
 
 
@@ -39,22 +37,36 @@
 
                         </span></span></span></span><br>
 
-            <p id="timeOfDay"></p>
-
+            <!-- DEPRECATED CODE     
+            
+                <p id="timeOfDay"></p>
+            <script src="/src/moment/moment.min.js"> </script>
             <script>
                 let question = 'What time is it? Type in format: XX:XX';
                 let response = '';
                 const getQuestion = () => {
-                    let time = prompt(question);
+                    let time = prompt(question, moment().format(
+                        'h:mm'));
                     if (time != null) {
-                        response = document.getElementById("timeOfDay").outerHTML = time + ' PM';
+                        response = document.getElementById("timeOfDay").outerHTML = time + ' ' + moment().format(
+                            'a');
                     }
                 }
 
                 const getResponse = () => {
                     return response;
                 }
-            </script><br>
+            </script> -->
+
+            <p id="timeOfDay"></p>
+            <script src="/src/moment/moment.min.js"> </script>
+            <script>
+                const currentTime = moment().format(
+                    'h:mm ' + 'a'.toUpperCase());
+                document.getElementById("timeOfDay").outerHTML = currentTime;
+            </script>
+
+            <br>
             <br>
             <br>
             <span style="font-size:19px;"><span style="font-family:&quot;Times New Roman&quot;,serif"><span
