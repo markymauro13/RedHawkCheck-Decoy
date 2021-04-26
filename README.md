@@ -7,3 +7,5 @@ Enjoy!
 
 Visit https://redhawkcheck.netlify.app/
 - Technologies: HTML/CSS/Bootstrap/JavaScript/Moment.js
+
+Made Public on 4/26/2021
