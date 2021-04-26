@@ -6,5 +6,4 @@ More info here: https://www.montclair.edu/redhawk-restart/
 Enjoy!
 
 Visit https://redhawkcheck.netlify.app/
-- All you have to do is click the MSU logo then type the current time, then your good to go! 
 - Technologies: HTML/CSS/Bootstrap/JavaScript/Moment.js
