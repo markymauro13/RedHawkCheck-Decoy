@@ -24,11 +24,13 @@
 
 
     <div class="middle pt-5">
-        <div style="text-align: center;"><span style="font-size:19px;"><span
-                    style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:black"><span
-                            style="font-family: Calibri, sans-serif; outline: rgb(0, 0, 0) solid 0px;"
+        <div style="text-align: center;"><span style="font-size:22px;"><span
+                    style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#43464C"><span
+                            style="font-family: Arial, Helvetica, sans-serif; outline: rgb(0, 0, 0) solid 0px;"
                             tabindex="-1">Survey Completed:<br>
-                            <p id="currentDate"></p>
+                            <b>
+                                <p id="currentDate" class="enlarge"></p>
+                            </b>
                             <script src="/src/moment/moment.min.js"> </script>
                             <script>
                                 const date = moment().format('dddd, MMMM Do');
@@ -57,8 +59,12 @@
                     return response;
                 }
             </script> -->
-
-            <p id="timeOfDay"></p>
+            <div style="text-align: center;"><span
+                    style="font-size:22px; color:#43464C; font-family: Arial, Helvetica, sans-serif;">
+                    <b>
+                        <p id="timeOfDay" class="enlarge"></p>
+                    </b>
+                </span></div>
             <script src="/src/moment/moment.min.js"> </script>
             <script>
                 const currentTime = moment().format(
@@ -67,19 +73,21 @@
             </script>
 
             <br>
-            <br>
-            <br>
             <span style="font-size:19px;"><span style="font-family:&quot;Times New Roman&quot;,serif"><span
                         style="color:black"><span style="font-family:&quot;Calibri&quot;,sans-serif">Welcome to
                             campus!&nbsp;&nbsp;</span></span></span></span>
         </div>
     </div>
 
-    <div class="bottom-top text-center pb-5">
+    <!-- <div class="bottom-top text-center pb-5">
         <div style="text-align: center;"><img height="227"
                 src="https://montclair.co1.qualtrics.com/CP/Graphic.php?IM=IM_doK63hWHsVCBoZT"
                 style="width: 219px; height: 227px;" width="219" data-image-state="ready"></div>
-    </div>
+    </div> -->
+
+    <div style="text-align: center;"><img height="407"
+            src="https://montclair.co1.qualtrics.com/CP/Graphic.php?IM=IM_862cIkpcaJvz0OO"
+            style="width: 400px; height: 407px;" width="400" data-image-state="ready"></div>
 
     <div class="bottom text-center pt-5">
         <div id="Plug" style="display:block !important;"><a class="swag" style="display:block !important;"
@@ -91,6 +99,8 @@
         </div>
 
     </div>
+
+
 
 </body>
 
